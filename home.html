@@ -43,6 +43,7 @@
           <p class="mb-4">
             <p><a class="btn btn-primary btn-lg" href="blog.html" role="button">Saber más &raquo;</a></p>
           </p>
+          <button type="button" class="btn btn-dark" onclick="cambiarModo()"><img src="data:image/png;base64,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" alt="" width="20px"></button>
         </div>
       </div>
 
@@ -74,6 +75,18 @@
     </footer>
     <!-- Footer -->
     <!-- jQuery and JS bundle w/ Popper.js -->
+    <script>
+      function cambiarModo() { 
+      var cuerpoweb = document.body; 
+      cuerpoweb.classList.toggle("oscuro"); 
+}
+</script>
+<script type="text/javascript"> 
+function cambiarModo() { 
+var cuerpoweb = document.body; 
+cuerpoweb.classList.toggle("oscuro"); 
+} 
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
